@@ -65,7 +65,6 @@
 	</div>
 <?=$this->html->script('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')?>
 <?=$this->html->script('//ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js')?>
-<?=$this->html->script('jquery.sortable')?>
 <?=$this->html->script('angular.myfunc')?>
 </body>
 </html>
