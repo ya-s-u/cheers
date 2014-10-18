@@ -16,6 +16,7 @@
 	-->
 	<div class="container">
 		<p class="shop_text">近所でおすすめのお店</p>
+		<p class="loading" ng-show="!Shops">現在地からおすすめのお店を読み込み中.....</p>
 		<ul class="shop">
 			<li ng-repeat="shop in Shops">
 				<img class="shop_img" src="{{shop.photo.pc.l}}" ng-click="add(<?php if(isset($auth))echo $auth['User']['user_id']?>,shop.id,shop.name,shop.urls.pc)">

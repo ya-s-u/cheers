@@ -2,7 +2,6 @@
  * ショップセレクト
  */
 var SelectShopCtrl = function ($scope, $http) {
-
 	if (navigator.geolocation) {
 		// 現在の位置情報取得を実施
 		navigator.geolocation.getCurrentPosition(
@@ -11,7 +10,7 @@ var SelectShopCtrl = function ($scope, $http) {
 				var lat = pos.coords.latitude;
 				var lng = pos.coords.longitude;
 				
-				//getShopByPosition(lat, lng, 1);
+				getShopByPosition(lat, lng, 1);
 			},
 			// 位置情報取得失敗時
 			function (pos) {
@@ -22,7 +21,7 @@ var SelectShopCtrl = function ($scope, $http) {
 		window.alert("本ブラウザではGeolocationが使えません");
 	}
 	
-	getShopByPosition(35.2330675, 136.8394406, 1);
+	//getShopByPosition(35.2330675, 136.8394406, 1);
 	
 	
 	//検索クエリとページ数を指定してnanapiAPIを叩き、viewを更新
