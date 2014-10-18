@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" href="<?=$this->Html->webroot.'img/fav.ico'?>">
 	<link rel="apple-touch-icon-precomposed" href="<?=$this->Html->webroot.'img/fav.ico'?>" />
 	
-	<title><?=$title_for_layout?> | Cheers!</title>
+	<title>Cheers!</title>
 		
 	<?=$this->Html->css('common')?>
 </head>
@@ -36,7 +36,7 @@
 	</div>
 	<div class="belt">
 		<div class="container">
-			<p class="belt_catch">行きたいお店をきっかけに、</br>久しぶりの親友と食事をしよう</p>
+			<p class="belt_catch">行きたいお店をきっかけに、</br>久しぶりの友人と食事をしましょう</p>
 		</div>
 	</div>
 	
