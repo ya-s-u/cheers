@@ -106,23 +106,9 @@ class User extends AppModel {
 	public function updateProfile($id,$Data) {
 		$this->updateAll(
 			array(
-				'User.username' => "'".$Data['name']."'",
-				'User.country' => "'".$Data['lang']."'",
+				'User.twitter_username' => "'".$Data['name']."'",
 				'User.twitter_image_url' => "'".$Data['profile_image_url_https']."'",
 			),
-			array(
-				'User.user_id' => $id,
-			)
-		);
-
-		return;
-	}
-
-	/**
-	* 訪問国を更新
-	*/
-	public function updateCountry($id,$Data) {
-		$this->updateAll($Data,
 			array(
 				'User.user_id' => $id,
 			)

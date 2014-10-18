@@ -2,7 +2,7 @@
 App::uses('Controller', 'Controller');
 
 class AppController extends Controller {
-	public $uses = array('User');
+	public $uses = array('User','Following');
 	public $layout = 'Common';
 	public $helpers = array('Html','Form','Session');
 	public $components = array(
@@ -19,18 +19,18 @@ class AppController extends Controller {
 	        ),
 	        'loginError' => 'パスワードもしくはログインIDをご確認下さい。',
 	        'authError' => 'ご利用されるにはログインが必要です。',
-	        'loginAction' => array('controller' => 'posts', 'action' => 'index'),
+	        'loginAction' => array('controller' => 'users', 'action' => 'index'),
 	        'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
 	        'logoutRedirect' => array('controller' => 'posts', 'action' => 'index'),
 	    ),
 	);
 
 	public function beforeFilter() {
-		$auth_id = $this->Auth->user('id');
+		$auth_id = $this->Auth->user('twitter_screen_name');
+		
 		if($auth_id) {
 			$auth = $this->User->getUser($auth_id);
 			$this->set('auth',$auth);
 		}
-
 	}
 }

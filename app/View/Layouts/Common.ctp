@@ -24,19 +24,19 @@
 			<h1><a href="//cheers.trial.jp"><?=$this->Html->image('logo.png')?></a></h1>
 			<?php if(isset($auth)) :?>
 			<ul class="user_menu">
-				<li><a href="/posts/create"><?=$this->Html->image($auth['User']['twitter_profile_img_url'])?>まとめをつくる</a></li>
+				<li><?=$this->Html->image($auth['User']['twitter_image_url'])?></li>
 				<li><a href="/users/logout">ログアウト</a></li>
 			</ul>
 			<?php else :?>
 			<ul class="user_menu">
-				<li><a href="/twitters/redirect1"><i class="icon-facebook"></i>ログイン/ユーザー登録</a></li>
+				<li><a href="/twitters/redirect1"><i class="icon-twitter"></i>ログイン/ユーザー登録</a></li>
 			</ul>
 			<?php endif?>
 		</div>
 	</div>
 	<div class="belt">
 		<div class="container">
-			<p class="belt_catch">行きたいお店をきっかけに、</br>久しぶりの友人と食事をしましょう</p>
+			<p class="belt_catch">行きたいお店をきっかけに、</br>久しぶりの友人と食事をしませんか</p>
 		</div>
 	</div>
 	
