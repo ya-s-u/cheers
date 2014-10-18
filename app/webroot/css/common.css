@@ -138,7 +138,7 @@ h1 {
 
 .user_menu .icon-twitter {
 	float: left;
-	color: #3B5998;
+	color: #55acee;
 	font-size: 20px;
 	position: relative;
 	top: -1px;
@@ -155,10 +155,10 @@ h1 {
 
 .belt_catch {
 	margin-top: 55px;
-	font-size: 42px;
+	font-size: 44px;
 	font-weight: bold;
 	color: white;
-	text-shadow: 0 0 2px black;
+	text-shadow: 0 0 10px black;
 }
 
 /* Footer */
@@ -281,6 +281,11 @@ h1 {
 }
 
 .shop_nav_prev {
-	position: absolute;
-	
+	position: absolute;	
+}
+
+.logo {
+	display: block;
+	width: 320px;
+	margin: 20px auto 40px;
 }

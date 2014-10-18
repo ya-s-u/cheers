@@ -9,6 +9,9 @@ class WantsController extends AppController {
 
     /* トップページ */
     public function add() {
+    	$this->autoRender =false;
+    	$this->autoLayout = false;
+    
 		$params = array(
 			'conditions' => array(
 				'user_id' => $this->request->query['user_id'],
@@ -28,11 +31,7 @@ class WantsController extends AppController {
 			'created' => date("Y-m-d G:i:s"),
 		);
 
-		if($this->Want->save($this->Want->data)) {
-			return 1;
-		} else {
-			return 0;
-		}
+		if($this->Want->save($this->Want->data)) return;
     }
 
 }
