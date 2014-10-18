@@ -1,0 +1,28 @@
+{
+  "name" : "nanapi/cakephp-redis",
+  "type": "cakephp-plugin",
+  "extra": {
+    "installer-name" : "Redis"
+  },
+  "description": "Redis DataSource Plugin for CakePHP",
+  "keywords": [
+    "cakephp",
+    "redis"
+  ],
+  "homepage": "https://github.com/nanapi/cakephp-redis",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yuhei Kagaya",
+      "email": "yuhei.kagaya@nanapi.co.jp"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/nanapi/cakephp-redis/issues",
+    "source": "https://github.com/nanapi/cakephp-redis"
+  },
+  "require": {
+    "php": ">=5.3.0",
+    "composer/installers": "*"
+  }
+}
