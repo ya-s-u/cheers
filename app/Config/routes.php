@@ -26,10 +26,8 @@
  */
  
  	//not required auth
-	Router::connect('/', array('controller' => 'posts', 'action' => 'index'));
-	Router::connect('/view/*', array('controller' => 'posts', 'action' => 'view'));
+	Router::connect('/', array('controller' => 'users', 'action' => 'index'));
 	
-
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
