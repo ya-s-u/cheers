@@ -5,11 +5,14 @@
 			<button class="shop_search_submit">お店を探す</button>
 		</div>
 	</div>
+	<!--
 	<ul class="shop_nav">
 		<li class="shop_nav_prev"><i class="icon-arrow-left"></i></li>
 		<li class="shop_nav_next"><i class="icon-arrow-right"></i></li>
 	</ul>
+	-->
 	<div class="container">
+		<p class="shop_text">近所でおすすめのお店</p>
 		<ul class="shop">
 			<li ng-repeat="shop in Shops">
 				<img class="shop_img" src="{{shop.photo.pc.l}}">

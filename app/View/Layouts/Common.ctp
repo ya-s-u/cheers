@@ -39,31 +39,6 @@
 			<p class="belt_catch">行きたいお店をきっかけに、</br>久しぶりの友人と食事をしませんか</p>
 		</div>
 	</div>
-	
-	<!-- 
-	<div class="select_article">
-		<div class="select_article_head">
-			<input type="text" ng-model="SearchText" id="ArticleSearch" placeholder="エンターキーを押して検索">
-			<div class="page_manage">
-				<i class="icon-arrow-left" ng-show="Status.has_prev" ng-click="changePage(SearchText,Status.current_page-1)"></i>
-				<p class="page_num" ng-show="Recipes">{{Status.current_page}}/{{Status.page_count}}</p>
-				<i class="icon-arrow-right" ng-show="Status.has_next" ng-click="changePage(SearchText,Status.current_page+1)"></i>
-			</div>
-			<p class="select_article_count">選択中の記事数: <span>{{CountSelectedRecipes}}</span>/10</p>
-		</div>
-		<div class="select_article_body">
-			<p ng-show="!Recipes" class="select_article_none">キーワードを入力して、nanapiの記事を検索してください</p>
-			<ul class="select_article_list">
-				<li ng-repeat="recipe in Recipes" ng-click="addRecipe(recipe.recipe_id,recipe.title,recipe.image)">
-					<img src="{{recipe.image}}?quality=85&size=250">
-					<p>{{recipe.title}}</p>
-					<a href="http://nanapi.jp/{{recipe.recipe_id}}" target="_blank">nanapiで記事を確認</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	 -->
-	
 	<?=$this->fetch('content')?>
 	<div id="footer">
 		<div class="container">

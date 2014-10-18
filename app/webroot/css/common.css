@@ -186,7 +186,7 @@ h1 {
 .shop_search {
 	height: 80px;
 	background: white;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .shop_search_input {
@@ -202,6 +202,13 @@ h1 {
 	font-size: 14px;
 	background: #f05b41;
 	color: white;
+}
+
+.shop_text {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #555;
 }
 
 .shop {
