@@ -56,9 +56,7 @@ var SelectShopCtrl = function ($scope, $http) {
 		    url : 'http://cheers.trial.jp/wants/add',
 			params: parameter,
 		}).success(function(data, status, headers, config) {
-			console.log(data);
 		}).error(function(data, status, headers, config) {
-			console.log('error!');
 		});
     }
 }

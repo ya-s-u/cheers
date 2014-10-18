@@ -9,6 +9,14 @@ class WantsController extends AppController {
 
     /* トップページ */
     public function add() {
+		$params = array(
+			'conditions' => array(
+				'user_id' => $this->request->query['user_id'],
+				'shop_id' => $this->request->query['shop_id'],
+			),
+		);
+		if($this->Want->find('first',$params)) return;
+
 		$this->Want->set($this->request->query);
 		$this->Want->validates();
 		$this->Want->create();

@@ -148,7 +148,7 @@ h1 {
 /* Belt */
 .belt {
 	height: 360px;
-	background: url(https://static.pexels.com/wp-content/uploads/2014/07/bar-chat-chatting-2286.jpg);
+	background: url(../img/top.png);
 	background-position: center;
 	background-size: cover;
 }
