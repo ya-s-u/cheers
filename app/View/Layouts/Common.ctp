@@ -29,7 +29,7 @@
 			</ul>
 			<?php else :?>
 			<ul class="user_menu">
-				<li><a href="/twitters/redirect1"><i class="icon-twitter"></i>ログイン/ユーザー登録</a></li>
+				<li><a href="/twitters/redirect1"><i class="icon-facebook"></i>ログイン/ユーザー登録</a></li>
 			</ul>
 			<?php endif?>
 		</div>
@@ -65,11 +65,16 @@
 	 -->
 	
 	<div class="main" ng-controller="SelectShopCtrl">
-		<div class="search">
+		<div class="shop_search">
 			<div class="container">
-				<input type="text" ng-model="SearchText" id="ArticleSearch" placeholder="エンターキーを押して検索">
+				<input class="shop_search_input" type="text" ng-model="SearchText" id="ArticleSearch" placeholder="店名や駅名を入力">
+				<button class="shop_search_submit">お店を探す</button>
 			</div>
 		</div>
+		<ul class="shop_nav">
+			<li class="shop_nav_prev"><i class="icon-arrow-left"></i></li>
+			<li class="shop_nav_next"><i class="icon-arrow-right"></i></li>
+		</ul>
 		<div class="container">
 			<ul class="shop">
 				<li ng-repeat="shop in Shops">
@@ -86,7 +91,7 @@
 	<div id="footer">
 		<div class="container">
 			<p class="footer_text">Work for the Cookpad Hackathon 2014</p>
-			<p class="footer_cr">© 2014/10/18 Cheers! created by <a href="https://twitter.com/ya_s_u" target="_blank">@ya_s_u</a></p>
+			<p class="footer_cr">© 2014/10/19 Cheers! created by <a href="https://twitter.com/ya_s_u" target="_blank">@ya_s_u</a></p>
 		</div>
 	</div>
 <?=$this->html->script('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')?>

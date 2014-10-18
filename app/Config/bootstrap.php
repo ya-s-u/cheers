@@ -36,3 +36,21 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+/**
+ * 認証用プラグイン
+ */
+CakePlugin::load('Opauth', array('routes' => true, 'bootstrap' => true));
+ 
+/**
+ * Facebook認証のためのstrategy
+ */
+Configure::write('Opauth.Strategy.Facebook', array(
+	'app_id' => '782740005121656',
+	'app_secret' => '98039e33232084062ad5d62fbefde9d5'
+));
+ 
+/**
+ * 認証用のURL設定
+ */
+Configure::write('Opauth.path', '/skills/auth/');
