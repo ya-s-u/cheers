@@ -242,8 +242,11 @@ h1 {
 	margin-right: 0;
 }
 
-.shop > li:check:before {
+.shop > li.check:before {
 	content: "\e607";
+	position: absolute;
+	font-size: 60px;
+	color: #00a89c;
 }
 
 .shop_img {
