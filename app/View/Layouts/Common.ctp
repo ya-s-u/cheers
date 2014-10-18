@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" href="<?=$this->Html->webroot.'img/fav.ico'?>">
 	<link rel="apple-touch-icon-precomposed" href="<?=$this->Html->webroot.'img/fav.ico'?>" />
 	
-	<title><?=$title_for_layout?> - nanapic</title>
+	<title><?=$title_for_layout?> | Cheers!</title>
 		
 	<?=$this->Html->css('common')?>
 </head>
