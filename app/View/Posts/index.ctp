@@ -1,16 +1,6 @@
-<div class="belt_top">
+<div class="belt">
 	<div class="container">
-		<ul class="random_posts">
-			<?php foreach($RandomPosts as $post) :?>
-			<li>
-				<a href="/view/<?=h($post['Post']['id'])?>">
-					<img class="random_posts_thumb" src="<?=h($post['Post']['thumb_img_url'])?>?mode=trim&width=316&height=200">
-					<h3 class="random_posts_title"><?=$this->Text->truncate($post['Post']['title'],36,array('ellipsis' => '...','exact' => true ,'html' => false));?></h3>
-					<p class="random_posts_comment"><?=$this->Text->truncate($post['Post']['comment'],45,array('ellipsis' => '...','exact' => true ,'html' => false));?></p>
-				</a>
-			</li>
-			<?php endforeach?>
-		</ul>
+		
 	</div>
 </div>
 <div class="main">

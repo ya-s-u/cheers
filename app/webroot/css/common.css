@@ -41,9 +41,13 @@
 }
 
 /* Common */
+body {
+	background: #f1f2f2;
+}
+
 .container {
 	position: relative;
-	width: 1000px;
+	width: 1170px;
 	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
@@ -66,46 +70,21 @@ a img:hover {
 
 /* Header */
 #header {
-	height: 90px;
-	border-bottom: 1px solid #ddd;
+	height: 60px;
+	background: white;
 }
 
 h1 {
 	display: inline;
 	position: absolute;
-	left: 400px;
-	top: 20px;
-	width: 200px;
-}
-
-.h1_sub {
-	float: left;
-	width: 200px;
-	margin-top: 4px;
-}
-
-.global_menu {
-	float: left;
-	margin-top: 35px;
-}
-
-.global_menu li {
-	float: left;
-	margin-right: 20px;
-}
-
-.global_menu li a {
-	font-size: 13px;
-	color: #333;
-}
-
-.global_menu li a:hover {
-	text-decoration: underline;
+	left: 0;
+	top: 10px;
+	width: 160px;
 }
 
 .user_menu {
 	float: right;
-	margin-top: 35px;
+	margin-top: 20px;
 }
 
 .user_menu img {
@@ -144,9 +123,10 @@ h1 {
 
 /* Belt */
 .belt {
-	height: 40px;
-	background: #eee;
-	border-bottom: 1px solid #ddd;
+	height: 400px;
+	background: url(https://static.pexels.com/wp-content/uploads/2014/07/bar-chat-chatting-2286.jpg);
+	background-position: center;
+	background-size: cover;
 }
 
 .breadcrumb li {
@@ -172,19 +152,21 @@ h1 {
 #footer {
 	margin-top: 30px;
 	height: 70px;
-	border-top: 1px solid #eee;
+	background: #3c4347;
 }
 
 .footer_text {
 	float: left;
 	font-size: 14px;
 	margin: 30px 0;
+	color: white;
 }
 
 .footer_cr {
 	float: right;
 	font-size: 14px;
 	margin: 30px 0;
+	color: white;
 }
 
 /* Curators */

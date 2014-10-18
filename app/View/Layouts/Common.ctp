@@ -21,11 +21,7 @@
 <body>
 	<div id="header">
 		<div class="container">
-			<ul class="global_menu">
-				<li><a href="/">新着まとめ</a></li>
-				<li><a href="/curators">キュレーター一覧</a></li>
-			</ul>
-			<h1><a href="//nanapi.trial.jp"><?=$this->Html->image('logo.png')?></a></h1>
+			<h1><a href="//cheers.trial.jp"><?=$this->Html->image('logo.png')?></a></h1>
 			<?php if(isset($auth)) :?>
 			<ul class="user_menu">
 				<li><a href="/posts/create"><?=$this->Html->image($auth['User']['twitter_profile_img_url'])?>まとめをつくる</a></li>
@@ -41,8 +37,8 @@
 	<?=$this->fetch('content')?>
 	<div id="footer">
 		<div class="container">
-			<p class="footer_text">Work on the nanapi summer internship 2014</p>
-			<p class="footer_cr">© 2014/8/22 nanapic created by <a href="https://twitter.com/ya_s_u" target="_blank">@ya_s_u</a></p>
+			<p class="footer_text">Work for the Cookpad Hackathon 2014</p>
+			<p class="footer_cr">© 2014/10/18 cheers! created by <a href="https://twitter.com/ya_s_u" target="_blank">@ya_s_u</a></p>
 		</div>
 	</div>
 <?=$this->html->script('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')?>
