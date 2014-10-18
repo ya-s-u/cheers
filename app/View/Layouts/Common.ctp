@@ -34,7 +34,22 @@
 			<?php endif?>
 		</div>
 	</div>
-	<?=$this->fetch('content')?>
+	<div class="belt">
+		<div class="container">
+			<p>カフェに行く</p>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<ul class="shop">
+				<li><a href="">
+					<img src="http://www.offertevacanzeinitalia.it/assets/profiles/290/1409208337jpg200_3002.jpeg">
+					<p class="shop_title">つるとんたん</p>
+				</a></li>
+			</ul>
+			<!-- <?=$this->fetch('content')?> -->
+		</div>
+	</div>
 	<div id="footer">
 		<div class="container">
 			<p class="footer_text">Work for the Cookpad Hackathon 2014</p>
