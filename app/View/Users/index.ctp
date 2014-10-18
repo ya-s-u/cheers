@@ -1,8 +1,10 @@
 <div class="main" ng-controller="SelectShopCtrl">
 	<div class="shop_search">
 		<div class="container">
+			<!--
 			<input class="shop_search_input" type="text" ng-model="SearchText" id="ArticleSearch" placeholder="店名や駅名を入力">
 			<button class="shop_search_submit">お店を探す</button>
+			-->
 		</div>
 	</div>
 	<!--
