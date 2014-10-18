@@ -43,6 +43,24 @@ var SelectShopCtrl = function ($scope, $http) {
     });
 	}
 	
+	$scope.add = function (user, id, name, url) {
+        var parameter = {
+ 	 		'user_id': user,
+ 	 		'shop_id': id,
+ 	 		'name': name,
+ 	 		'url': url,
+ 	 	};
+
+		$http({
+			method : 'GET',
+		    url : 'http://cheers.trial.jp/wants/add',
+			params: parameter,
+		}).success(function(data, status, headers, config) {
+			console.log(data);
+		}).error(function(data, status, headers, config) {
+			console.log('error!');
+		});
+    }
 }
 
 

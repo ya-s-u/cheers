@@ -15,7 +15,7 @@
 		<p class="shop_text">近所でおすすめのお店</p>
 		<ul class="shop">
 			<li ng-repeat="shop in Shops">
-				<img class="shop_img" src="{{shop.photo.pc.l}}">
+				<img class="shop_img" src="{{shop.photo.pc.l}}" ng-click="add(<?=$auth['User']['user_id']?>,shop.id,shop.name,shop.urls.pc)">
 				<p class="shop_budget"><i class="icon-info"></i>{{shop.budget.average}}</p>
 				<p class="shop_title">{{shop.name}}</p>
 				<p class="shop_catch">{{shop.catch}}</p>

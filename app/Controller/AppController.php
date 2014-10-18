@@ -2,7 +2,7 @@
 App::uses('Controller', 'Controller');
 
 class AppController extends Controller {
-	public $uses = array('User','Following');
+	public $uses = array('User','Following','Want');
 	public $layout = 'Common';
 	public $helpers = array('Html','Form','Session');
 	public $components = array(
