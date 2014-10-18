@@ -60,7 +60,7 @@ class UpdateShell extends AppShell {
 				
 				
 					//つぶやく文字列を決定
-			        $tubuyaki = '@'.$a1.'さんと@'.$a2.'さんで'.$p.'に行ってみてはいかがですか！ '.$u;
+			        $tubuyaki = '@'.$a1.'さんと@'.$a2.'さんで'.$p.'に行ってみてはいかがですか？！ '.$u;
 			        
 			        
 			        
