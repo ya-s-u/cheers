@@ -67,7 +67,7 @@
 	<div class="main" ng-controller="SelectShopCtrl">
 		<div class="search">
 			<div class="container">
-				
+				<input type="text" ng-model="SearchText" id="ArticleSearch" placeholder="エンターキーを押して検索">
 			</div>
 		</div>
 		<div class="container">
