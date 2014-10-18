@@ -189,6 +189,17 @@ h1 {
 	margin-bottom: 20px;
 }
 
+.shop_search_text {
+	font-size: 20px;
+	color: #555;
+	margin: 25px 0;
+}
+
+.shop_search_text a {
+	font-size: 20px;
+	color: #55acee;
+}
+
 .shop_search_input {
 	width: 300px;
 	margin: 20px;

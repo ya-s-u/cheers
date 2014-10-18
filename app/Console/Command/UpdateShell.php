@@ -7,7 +7,6 @@ class UpdateShell extends AppShell {
     public $uses = array( 'User','Following','Want' );
 
     function fb_update() {
-
     
     	$params = array(
 			'order' => array('shop_id' => 'asc'),
@@ -43,14 +42,14 @@ class UpdateShell extends AppShell {
 							'User.user_id' => $p1,
 						),
 					);
-					$u1 = $this->find('first',$params);
+					$u1 = $this->User->find('first',$params);
 					
 					$params = array(
 						'conditions' => array(
 							'User.user_id' => $p2,
 						),
 					);
-					$u2 = $this->find('first',$params);
+					$u2 = $this->User->find('first',$params);
 					
 					$a1 = $u1['User']['twitter_screen_name'];
 					$a2 = $u2['User']['twitter_screen_name'];
@@ -58,8 +57,10 @@ class UpdateShell extends AppShell {
 					$p = $Want[$i]['Want']['name'];
 					$u = $Want[$i]['Want']['url'];
 				
+				
+				
 					//つぶやく文字列を決定
-			        $tubuyaki = '@'.$a1.'さんと'.$a2.'さんで'.$p.'に行ってみてはいかがですか！ '.$u;
+			        $tubuyaki = '@'.$a1.'さんと@'.$a2.'さんで'.$p.'に行ってみてはいかがですか！ '.$u;
 			        
 			        
 			        

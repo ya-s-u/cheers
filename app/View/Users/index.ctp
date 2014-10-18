@@ -5,6 +5,7 @@
 			<input class="shop_search_input" type="text" ng-model="SearchText" id="ArticleSearch" placeholder="店名や駅名を入力">
 			<button class="shop_search_submit">お店を探す</button>
 			-->
+			<p class="shop_search_text">ああああああああああああああああああああああああああ <a href="//twitter.com/cheers_bot" target="_blank">@cheers_bot</a></p>
 		</div>
 	</div>
 	<!--
