@@ -36,7 +36,7 @@
 	</div>
 	<div class="belt">
 		<div class="container">
-			<p>カフェに行く</p>
+			<p class="belt_catch">行きたいお店をきっかけに、</br>久しぶりの親友と食事をしよう</p>
 		</div>
 	</div>
 	
@@ -65,22 +65,19 @@
 	 -->
 	
 	<div class="main" ng-controller="SelectShopCtrl">
+		<div class="search">
+			<div class="container">
+				
+			</div>
+		</div>
 		<div class="container">
 			<ul class="shop">
 				<li ng-repeat="shop in Shops">
-					<a href="{{shop.urls.pc}}" target="_blank">
-						<img class="shop_img" src="{{shop.photo.pc.l}}">
-						<ul class="shop_star">
-							<li><i class="icon-star3"></i></li>
-							<li><i class="icon-star3"></i></li>
-							<li><i class="icon-star3"></i></li>
-							<li><i class="icon-star"></i></li>
-							<li><i class="icon-star"></i></li>
-						</ul>
-						<p class="shop_title">{{shop.name}}</p>
-						<p class="shop_budget">{{shop.budget.average}}</p>
-						<p class="shop_open">{{shop.open}}</p>
-					</a>
+					<img class="shop_img" src="{{shop.photo.pc.l}}">
+					<p class="shop_budget"><i class="icon-info"></i>{{shop.budget.average}}</p>
+					<p class="shop_title">{{shop.name}}</p>
+					<p class="shop_catch">{{shop.catch}}</p>
+					<a class="shop_link" href="{{shop.urls.pc}}" target="_blank">お店の詳細を確認する</a>
 				</li>
 			</ul>
 			<!-- <?=$this->fetch('content')?> -->
@@ -89,7 +86,7 @@
 	<div id="footer">
 		<div class="container">
 			<p class="footer_text">Work for the Cookpad Hackathon 2014</p>
-			<p class="footer_cr">© 2014/10/18 cheers! created by <a href="https://twitter.com/ya_s_u" target="_blank">@ya_s_u</a></p>
+			<p class="footer_cr">© 2014/10/18 Cheers! created by <a href="https://twitter.com/ya_s_u" target="_blank">@ya_s_u</a></p>
 		</div>
 	</div>
 <?=$this->html->script('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')?>

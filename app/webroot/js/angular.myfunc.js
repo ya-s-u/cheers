@@ -3,17 +3,15 @@
  */
 var SelectShopCtrl = function ($scope, $http) {
 
-	var lat, lng;
-
 	if (navigator.geolocation) {
 		// 現在の位置情報取得を実施
 		navigator.geolocation.getCurrentPosition(
 			// 位置情報取得成功時
 			function (pos) { 
-				lat = pos.coords.latitude;
-				lng = pos.coords.longitude;
+				var lat = pos.coords.latitude;
+				var lng = pos.coords.longitude;
 				
-				getShop(lat, lng, 1);
+				//getShop(lat, lng, 1);
 			},
 			// 位置情報取得失敗時
 			function (pos) {
@@ -24,9 +22,11 @@ var SelectShopCtrl = function ($scope, $http) {
 		window.alert("本ブラウザではGeolocationが使えません");
 	}
 	
+	getShopByPosition(35.2330675, 136.8394406, 1);
+	
 	
 	//検索クエリとページ数を指定してnanapiAPIを叩き、viewを更新
-	function getShop(lat, lng, page) {
+	function getShopByPosition(lat, lng, page) {
 		var uri ='http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?'
 			+ '&key=729427de25c6b01c'
 			+ '&lat=' + lat //緯度

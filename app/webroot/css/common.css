@@ -153,6 +153,14 @@ h1 {
 	background-size: cover;
 }
 
+.belt_catch {
+	margin-top: 60px;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 0 2px black;
+}
+
 /* Footer */
 #footer {
 	margin-top: 30px;
@@ -175,7 +183,14 @@ h1 {
 }
 
 /* Select Shop */
+.search {
+	height: 80px;
+	background: #3c4347;
+	margin-bottom: 40px;
+}
+
 .shop > li {
+	position: relative;
 	float: left;
 	width: 268px;
 	height: 298px;
@@ -191,35 +206,51 @@ h1 {
 
 .shop_img {
 	height: 178px;
+	cursor: pointer;
 }
 
-.shop_star {
-	display: block;
-	overflow: hidden;
-	margin: 10px 20px;
+.shop_img:hover {
+	opacity: 0.5;
 }
 
-.shop_star li {
-	float: left;
-	margin-right: 3px;
-}
-
-.shop_star li i {
+.shop_budget {
+	position: absolute;
+	right: 0;
+	bottom: 120px;
+	padding: 2px 5px;
 	font-size: 16px;
-}
-
-.icon-star3 {
-	color: #f0a541;
-}
-
-.icon-star {
-	color: #ddd;
+	line-height: 1.2em;
+	color: white;
+	background: #00a89c;
 }
 
 .shop_title {
-	margin: 10px 20px;
+	margin: 10px 20px 5px 20px;
 	font-size: 18px;
+	font-weight: bold;
 	color: black;
+}
+
+.shop_catch {
+	overflow: hidden;
+	height: 40px;
+	margin: 0 20px;
+	font-size: 12px;
+	line-height: 1.2em;
+	color: #777;
+}
+
+.shop_link {
+	float: right;
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	font-size: 12px;
+	color: #777;
+}
+
+.shop_link:hover {
+	text-decoration: underline;
 }
 
 
