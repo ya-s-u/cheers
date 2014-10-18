@@ -36,7 +36,7 @@
 	</div>
 	<div class="belt">
 		<div class="container">
-			<p class="belt_catch">行きたいお店をきっかけに、</br>久しぶりの友人と食事をしませんか</p>
+			<p class="belt_catch">気になるお店をきっかけに、</br>久しぶりの友人と食事をしませんか</p>
 		</div>
 	</div>
 	<?=$this->fetch('content')?>

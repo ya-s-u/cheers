@@ -242,6 +242,10 @@ h1 {
 	margin-right: 0;
 }
 
+.shop > li:check:before {
+	content: "\e607";
+}
+
 .shop_img {
 	height: 178px;
 	cursor: pointer;
