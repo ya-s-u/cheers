@@ -39,11 +39,18 @@
 			<p>カフェに行く</p>
 		</div>
 	</div>
-	<div class="main">
+	<div class="main" ng-controller="SelectShopCtrl">
 		<div class="container">
 			<ul class="shop">
 				<li><a href="">
 					<img src="http://www.offertevacanzeinitalia.it/assets/profiles/290/1409208337jpg200_3002.jpeg">
+					<ul class="shop_star">
+						<li><i class="icon-star3"></i></li>
+						<li><i class="icon-star3"></i></li>
+						<li><i class="icon-star3"></i></li>
+						<li><i class="icon-star"></i></li>
+						<li><i class="icon-star"></i></li>
+					</ul>
 					<p class="shop_title">つるとんたん</p>
 				</a></li>
 			</ul>

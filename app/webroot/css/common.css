@@ -175,7 +175,7 @@ h1 {
 }
 
 /* Select Shop */
-.shop li {
+.shop > li {
 	float: left;
 	width: 270px;
 	margin:  0 30px 30px 0;
@@ -184,11 +184,38 @@ h1 {
 	border-radius: 4px;
 }
 
-.shop li:nth-child(4n) {
+.shop > li:nth-child(4n) {
 	margin-right: 0;
 }
 
+.shop_star {
+	display: block;
+	overflow: hidden;
+	margin: 10px 20px;
+}
 
+.shop_star li {
+	float: left;
+	margin-right: 3px;
+}
+
+.shop_star li i {
+	font-size: 16px;
+}
+
+.icon-star3 {
+	color: #f0a541;
+}
+
+.icon-star {
+	color: #ddd;
+}
+
+.shop_title {
+	margin: 10px 20px;
+	font-size: 18px;
+	color: black;
+}
 
 
 
