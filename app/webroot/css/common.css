@@ -177,7 +177,8 @@ h1 {
 /* Select Shop */
 .shop > li {
 	float: left;
-	width: 270px;
+	width: 268px;
+	height: 298px;
 	margin:  0 30px 30px 0;
 	background: white;
 	border: 1px solid #ddd;
@@ -186,6 +187,10 @@ h1 {
 
 .shop > li:nth-child(4n) {
 	margin-right: 0;
+}
+
+.shop_img {
+	height: 178px;
 }
 
 .shop_star {

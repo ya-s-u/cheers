@@ -13,8 +13,6 @@ var SelectShopCtrl = function ($scope, $http) {
 				lat = pos.coords.latitude;
 				lng = pos.coords.longitude;
 				
-				console.log(lat,lng);
-				
 				getShop(lat, lng, 1);
 			},
 			// 位置情報取得失敗時
@@ -34,16 +32,18 @@ var SelectShopCtrl = function ($scope, $http) {
 			+ '&lat=' + lat //緯度
 			+ '&lng=' + lng //経度
 			+ '&range=5' //範囲(3000m)
-			+ '&type=lite'
+			+ '&order=4' //ソート(おすすめ順)
 			+ '&start=' + page
 			+ '&count=12'
 			+ '&format=jsonp'
       + '&callback=JSON_CALLBACK';
     $http.jsonp(uri).success(function(data) {
-      $scope.results = data.results;
-      console.log(data.result.shop);
+      $scope.Shops = data.results.shop;
+      console.log(data);
     });
 	}
+	
+}
 
 
 

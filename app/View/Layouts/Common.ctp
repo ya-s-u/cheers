@@ -39,20 +39,49 @@
 			<p>カフェに行く</p>
 		</div>
 	</div>
+	
+	<!-- 
+	<div class="select_article">
+		<div class="select_article_head">
+			<input type="text" ng-model="SearchText" id="ArticleSearch" placeholder="エンターキーを押して検索">
+			<div class="page_manage">
+				<i class="icon-arrow-left" ng-show="Status.has_prev" ng-click="changePage(SearchText,Status.current_page-1)"></i>
+				<p class="page_num" ng-show="Recipes">{{Status.current_page}}/{{Status.page_count}}</p>
+				<i class="icon-arrow-right" ng-show="Status.has_next" ng-click="changePage(SearchText,Status.current_page+1)"></i>
+			</div>
+			<p class="select_article_count">選択中の記事数: <span>{{CountSelectedRecipes}}</span>/10</p>
+		</div>
+		<div class="select_article_body">
+			<p ng-show="!Recipes" class="select_article_none">キーワードを入力して、nanapiの記事を検索してください</p>
+			<ul class="select_article_list">
+				<li ng-repeat="recipe in Recipes" ng-click="addRecipe(recipe.recipe_id,recipe.title,recipe.image)">
+					<img src="{{recipe.image}}?quality=85&size=250">
+					<p>{{recipe.title}}</p>
+					<a href="http://nanapi.jp/{{recipe.recipe_id}}" target="_blank">nanapiで記事を確認</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	 -->
+	
 	<div class="main" ng-controller="SelectShopCtrl">
 		<div class="container">
 			<ul class="shop">
-				<li><a href="">
-					<img src="http://www.offertevacanzeinitalia.it/assets/profiles/290/1409208337jpg200_3002.jpeg">
-					<ul class="shop_star">
-						<li><i class="icon-star3"></i></li>
-						<li><i class="icon-star3"></i></li>
-						<li><i class="icon-star3"></i></li>
-						<li><i class="icon-star"></i></li>
-						<li><i class="icon-star"></i></li>
-					</ul>
-					<p class="shop_title">つるとんたん</p>
-				</a></li>
+				<li ng-repeat="shop in Shops">
+					<a href="{{shop.urls.pc}}" target="_blank">
+						<img class="shop_img" src="{{shop.photo.pc.l}}">
+						<ul class="shop_star">
+							<li><i class="icon-star3"></i></li>
+							<li><i class="icon-star3"></i></li>
+							<li><i class="icon-star3"></i></li>
+							<li><i class="icon-star"></i></li>
+							<li><i class="icon-star"></i></li>
+						</ul>
+						<p class="shop_title">{{shop.name}}</p>
+						<p class="shop_budget">{{shop.budget.average}}</p>
+						<p class="shop_open">{{shop.open}}</p>
+					</a>
+				</li>
 			</ul>
 			<!-- <?=$this->fetch('content')?> -->
 		</div>
